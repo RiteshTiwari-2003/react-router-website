@@ -11,7 +11,7 @@ import ContactForm from "./components/ContactForm";
 import NotFound from "./components/NotFound";
 import JobsLayout from "./Layout/JobsLayout";
 import Jobs, { jobsLoader } from "./pages/Jobs";
-import JobsDetail from "./components/JobsDetail";
+import JobsDetail, { jobsDetailLoader } from "./components/JobsDetail";
 
 
 const App = () => {
@@ -24,7 +24,7 @@ const App = () => {
         <Route path='Form' element={<ContactForm/>}></Route></Route>
         <Route path="jobs" element={<JobsLayout/>}>
         <Route index element={<Jobs/>} loader={jobsLoader}/>
-        <Route path=":id" element={<JobsDetail/>}/></Route>
+        <Route path=":id" element={<JobsDetail/>} loader={jobsDetailLoader}/></Route>
         <Route path="*" element={<NotFound/>}></Route>
   </Route>))
   return (
