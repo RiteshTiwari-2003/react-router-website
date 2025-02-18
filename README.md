@@ -51,3 +51,6 @@ function Navbar() {
 
 # navigation using useNaviagte hook;
 some time you want to navigate with different different page without any Link and navLink but with program 
+
+# what is route parameters and how to use it ?
+route parameters are values that are dynamically added into page url, ecommerce website are great example of route parameter
