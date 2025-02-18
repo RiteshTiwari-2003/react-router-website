@@ -1,6 +1,6 @@
 
 
-import Contact from '../components/Contact';
+import Contact from '../pages/Contact';
 import {Outlet} from "react-router-dom";
 
 const Contactlayout = () => {

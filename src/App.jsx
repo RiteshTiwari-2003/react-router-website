@@ -21,10 +21,12 @@ const App = () => {
         <Route path="about" element={<About/>}></Route>
         <Route path="contact" element={<ContactLayout/>}>
         <Route path='info' element={<ContactInfo/>}></Route>
-        <Route path='Form' element={<ContactForm/>}></Route></Route>
+        <Route path='Form' element={<ContactForm/>}></Route>
+        </Route>
         <Route path="jobs" element={<JobsLayout/>}>
         <Route index element={<Jobs/>} loader={jobsLoader}/>
-        <Route path=":id" element={<JobsDetail/>} loader={jobsDetailLoader}/></Route>
+        <Route path=":id" element={<JobsDetail/>} loader={jobsDetailLoader}/>
+        </Route>
         <Route path="*" element={<NotFound/>}></Route>
   </Route>))
   return (
