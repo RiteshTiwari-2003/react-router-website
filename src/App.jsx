@@ -9,6 +9,8 @@ import RootLayout from "./Layout/RootLayout";
 import ContactInfo from "./components/ContactInfo";
 import ContactForm from "./components/ContactForm";
 import NotFound from "./components/NotFound";
+import JobsLayout from "./Layout/JobsLayout";
+import Jobs from "./pages/Jobs";
 
 
 const App = () => {
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="contact" element={<ContactLayout/>}>
         <Route path='info' element={<ContactInfo/>}></Route>
         <Route path='Form' element={<ContactForm/>}></Route></Route>
+        <Route path="jobs" element={<JobsLayout/>}>
+        <Route index element={<Jobs/>}/></Route>
         <Route path="*" element={<NotFound/>}></Route>
   </Route>))
   return (
